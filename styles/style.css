@@ -1,0 +1,57 @@
+/*General Styles*/
+/*this makes padding and margin calculations easier*/
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+/*To set the fonts for the body of the site plus headings and parragraphs*/
+
+/*Set Styles for the full body of the site*/
+body{
+  font-family: 'Roboto', sans-serif;
+/*the code above determins the font for the entire body of the page*/
+}
+
+/*for efficent centering - helper classes*/
+.centered{text-align: center;}
+
+
+h1{
+  font-family: 'Courgette', cursive;
+  /*the code above determins the font for the headings on the page*/
+}
+h2, h3, h4, h5, h6{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Set styles for all your paragraphs*/
+p{
+
+}
+/*Set styles for all the anchor links*/
+a{
+  /*This takes off all the underlink feature on the anchorlinks*/
+  text-decoration: none;
+}
+/*Header Styles*/
+header{
+  background-image: url("https://unsplash.it/600/300/?random")
+}
+/*Nav is the navigation links at top of page example background color*/
+nav{
+
+}
+/*the anchor links with in the nav - font colour, hover*/
+nav a{
+
+}
+/*Wrting the styles for each section this would be thinks like padding, display, margins*/
+/*section 2*/
+.two section{
+  padding:20%
+}
+
+/*footer styles*/
+
+/*responsive styles*/
