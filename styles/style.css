@@ -4,29 +4,39 @@
   box-sizing: border-box;
   padding:0;
   margin:0;
+  font-family: 'Lato', sans-serif;
 }
 /*To set the fonts for the body of the site plus headings and parragraphs*/
 
 /*Set Styles for the full body of the site*/
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
+  overflow-x:hidden;
 /*the code above determins the font for the entire body of the page*/
 }
-
+img{
+  max-width: 100%
+}
 /*for efficent centering - helper classes*/
 .centered{text-align: center;}
 
 
 h1{
-  font-family: 'Courgette', cursive;
+  font-size: 10vh;
+  padding-top: 5%;
+  text-align: left;
+  padding-left: 5%;
   /*the code above determins the font for the headings on the page*/
 }
-h2, h3, h4, h5, h6{
-  font-family: 'Roboto', sans-serif;
+
+h3{
+  text-align: left;
+  padding-left: 5%;
 }
 
 /*Set styles for all your paragraphs*/
 p{
+  line-height: 1.6;
 
 }
 /*Set styles for all the anchor links*/
@@ -36,22 +46,263 @@ a{
 }
 /*Header Styles*/
 header{
-  background-image: url("https://unsplash.it/600/300/?random")
+  padding-top: 40px;
+  padding-bottom: 500px;
+  background-image: url('../images/rebeccatait-cover_pink.jpg');
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f4cfc4;
+
+}
+header .grid{
+  margin: 0 auto;
+  max-width: 800px;
+}
+header img{
+  display: block;
+  margin: 0 auto 40px auto;
+  max-width: 360px;
 }
 /*Nav is the navigation links at top of page example background color*/
-nav{
-
+header nav{
+  display: flex;
+  justify-content: space-around;
 }
 /*the anchor links with in the nav - font colour, hover*/
-nav a{
+header nav a{
+  color: #596869;
+}
 
+header nav a span{
+  padding: 6px 10px;
+  background-color: #faddd5;
+  border-radius: 3px;
 }
 /*Wrting the styles for each section this would be thinks like padding, display, margins*/
-/*section 2*/
-.two section{
-  padding:20%
+/*section About*/
+#about{
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  color: #596869;
+}
+#about .grid-middle{
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-/*footer styles*/
+#about img{
+  border-radius: 100px;
+  width: 100%;
+  height: auto;
+  padding-left: 10px
+}
+#about h2{
+  font-size: 25px;
+  color:#596869;
+  margin-bottom: 22px;
+}
+#about p{
+  padding-right: 16px;
+}
+#about a{
+  color: #e67e22;
+}
+#services{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+#services h4{
+  text-align: center;
+  padding: 75px 0;
+  font-size: 25px;
+}
+#services p{
+  display: none;
+}
+#services a {
+  color: #596869;
+  border: solid 10px white;
+  padding: 30px;
+}
+.masterclassimg{
+  background-image: url('../images/rebeccatait_masterclass.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.onlinecoursesimg{
+  background-image: url('../images/rebeccatait_courses.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.freesheetsimg{
+  background-image: url('../images/rebeccatait_practice.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.ebooksimg{
+  background-image: url('../images/rebeccatait_ebooks.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#services .ebooksimg a{
+  color: #f8f8f8;
+}
+.podcastimg{
+  background-image: url('../images/rebeccatait_podcasts.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#services .podcastimg a{
+  color: #f8f8f8;
+}
+
+.corporateimg{
+  background-image: url('../images/rebeccatait_corporate.jpg');
+  background-size: cover;
+  background-position: center;
+}
+@media all and (max-width: 767px) {
+
+  #services p{
+    display: block;
+  }
+
+	}
+/*CTA styles*/
+#cta{
+  background-color: #596860;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #f8f8f8;
+}
+
+#cta .grid-equalHeight-middle-noBottom{
+  margin: 0 auto;
+  /*display: block;*/
+  max-width: 800px;
+}
+
+#cta h3{
+  font-size: 32px;
+}
+.cta-button{
+  display:inline-block;
+  background-color: #e67e22;
+  color: #f8f8f8;
+  padding: 16px 14px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+}
+/*Footer Sytles*/
+footer{
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  color: #848c8e;
+  text-align: center;
+}
+
+footer .grid-middle-noBottom{
+  margin: 0 auto;
+  max-width: 800px;
+
+}
+footer h6{
+  font-size: 20px;
+}
+footer p{
+  margin: 20px 0;
+}
+ footer i{
+   color: #848c8e;
+   margin: 0 4px;
+ }
+
+/*Form Styling*/
+#form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  z-index: 1;
+  background-color: #596869;
+  text-align: center;
+}
+body.form-hide #form{
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.95);
+}
+body.form-show #form{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.easing{
+  -webkit-transition: all 350ms cubic-bezier(0.605, 0.198, 0.000, 0.990);
+   -moz-transition: all 350ms cubic-bezier(0.605, 0.198, 0.000, 0.990);
+     -o-transition: all 350ms cubic-bezier(0.605, 0.198, 0.000, 0.990);
+        transition: all 350ms cubic-bezier(0.605, 0.198, 0.000, 0.990);
+}
+#form-wrapper{
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  padding: 40px 0;
+  flex-direction:column;
+  justify-content: space-around;
+}
+#form-wrapper h6{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 32px;
+}
+#form-wrapper i{
+  position: absolute;
+  top: -40px;
+  right: 0;
+  cursor: pointer;
+}
+#form-wrapper form{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  height: 100%;
+  max-height: 540px;
+}
+#form-wrapper .element-wrapper{
+  color: #f8f8f8;
+  position: relative;
+}
+
+#form-wrapper .element-wrapper label{
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+#form-wrapper form input,
+#form-wrapper form textarea{
+  display: block;
+  padding: 18px 14px;
+  outline: none;
+  border: solid 1px #6a7a76;
+  background-color: #415152;
+  width: 100%;
+  color: #f8f8f8;
+
+}
+#form-wrapper form button{
+  margin-top: 36px;
+}
 
 /*responsive styles*/
