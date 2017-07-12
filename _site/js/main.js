@@ -2,6 +2,14 @@
 
 $( document ).ready(function() {
 
+// This awesome hamburger code is created by Daniel Swinkels who can be found in code pen
+  $(".burger-button").click(function(){
+  $(".burger-button").toggleClass("active");
+  $(".burger-menu").slideToggle();
+});
+
+
+
   // log
   console.log( "ready!" );
 

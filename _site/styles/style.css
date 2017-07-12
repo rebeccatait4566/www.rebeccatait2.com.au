@@ -72,6 +72,11 @@ header nav{
 /*the anchor links with in the nav - font colour, hover*/
 header nav a{
   color: #596869;
+  transition: 1s;
+}
+
+header nav a:hover{
+  transform: scale(1.2);
 }
 
 header nav a span{
@@ -79,6 +84,95 @@ header nav a span{
   background-color: #faddd5;
   border-radius: 3px;
 }
+
+/*Hamburger Menu - if you love this menu contact Daniel Swinkels on codepen*/
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid #596869;
+  background-color: #596869;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: #d0aba0;
+  background-color:#d0aba0;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(270deg);
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #596869;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #f8f8f8;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+/*
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+} */
+
+
 /*Wrting the styles for each section this would be thinks like padding, display, margins*/
 /*section About*/
 #about{
@@ -248,6 +342,12 @@ footer p{
   background-color: #596869;
   text-align: center;
 }
+#cmeform{
+  background-color: #596869;
+  text-align: center;
+  padding-top: 155px;
+  padding-bottom: 10px;
+}
 body.form-hide #form{
   visibility: hidden;
   opacity: 0;
@@ -268,7 +368,7 @@ body.form-show #form{
   max-width: 400px;
   margin: 0 auto;
   display: flex;
-  height: 100vh;
+  min-height: 740px;
   padding: 40px 0;
   flex-direction:column;
   justify-content: space-around;

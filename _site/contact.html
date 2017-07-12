@@ -44,51 +44,40 @@
           <ul>
         </div>
       </nav>
-    {{content}}
-    {% if page.url != "/contact.html" %}
-    <!-- This is the email pop up form -->
-    <section id="form" class="easing">
+    <div>
+  <h1>sales blurb</h1>
+</div>
+<section id="cmeform" class="easing">
       <div id="form-wrapper">
       <form method="POST" action="http://formspree.io/rebecca@rltconline.com">
         <div class="element-wrapper">
-          <i class="fa fa-times-circle" aria-hidden="true"></i>
-          <h6>Subscribe below to take the first steps in growing your business</h6>
+        <h6>To contact me please fill in details below for a personal response</h6>
         </div>
         <div class="element-wrapper">
           <label for="name">Name</label>
           <input type="text" name="name" placeholder="Joe Smith">
         </div>
         <div class="element-wrapper">
+          <label for="mobile">Mobile</label>
+          <input type="tel" name="mobile" placeholder="0404 000 000">
+        </div>
+        <div class="element-wrapper">
           <label for="email">Your Email</label>
           <input type="email" name="email" placeholder="joesmith@gmail.com">
         </div>
         <div class="element-wrapper">
-          <label for="message">Describe your greatest business need</label>
+          <label for="message">Feel free to note a few words</label>
           <textarea name="message" placeholder="I am a start up and need more leads"></textarea>
         </div>
+
         <div class="element-wrapper">
           <button class="cta-button" type="submit">Subscribe</button>
         </div>
       </form>
     </div>
-    </section>
+  </section>
 
-
-    <!-- Section to capture lead details  -->
-    <section id="cta">
-      <div class="grid-equalHeight-middle-noBottom">
-      <div class="col-8">
-      <h3>Want to grow your business?</h3>
-      <!-- add button to the right GET STARTED to click through to capture point -->
-      </div>
-      <div class="col-4">
-        <a id="cta-get-started" class="cta-button" href="#email" title="Get Started">
-          Get Started Now
-        </a>
-      </div>
-    </div>
-    </section>
-    {% endif %}
+    
     <!-- Footer of the page with social links and icons and call to action-->
     <footer id="contact" class="grid-middle-noBottom">
       <!-- Div is for contact details  -->

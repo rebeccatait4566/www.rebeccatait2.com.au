@@ -24,10 +24,57 @@
   </head>
 <!-- /*Body of the document */ -->
   <body class="form-hide">
-
+      <nav>
+        <div class="burger-button">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+        </div>
+         <div class="burger-menu">
+          <ul>
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/services.html">Services</a>
+            </li>
+            <li>
+              <a href="/podcast.html">Podcast</a>
+            </li>
+          <ul>
+        </div>
+      </nav>
     <div>
   <h1>Only a little while to wait and this part of Rebecca's website will be up and clickable</h1>
 </div>
+
+    
+    <!-- This is the email pop up form -->
+    <section id="form" class="easing">
+      <div id="form-wrapper">
+      <form method="POST" action="http://formspree.io/rebecca@rltconline.com">
+        <div class="element-wrapper">
+          <i class="fa fa-times-circle" aria-hidden="true"></i>
+          <h6>Subscribe below to take the first steps in growing your business</h6>
+        </div>
+        <div class="element-wrapper">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Joe Smith">
+        </div>
+        <div class="element-wrapper">
+          <label for="email">Your Email</label>
+          <input type="email" name="email" placeholder="joesmith@gmail.com">
+        </div>
+        <div class="element-wrapper">
+          <label for="message">Describe your greatest business need</label>
+          <textarea name="message" placeholder="I am a start up and need more leads"></textarea>
+        </div>
+        <div class="element-wrapper">
+          <button class="cta-button" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+    </section>
 
 
     <!-- Section to capture lead details  -->
@@ -44,6 +91,7 @@
       </div>
     </div>
     </section>
+    
     <!-- Footer of the page with social links and icons and call to action-->
     <footer id="contact" class="grid-middle-noBottom">
       <!-- Div is for contact details  -->
