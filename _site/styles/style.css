@@ -22,10 +22,11 @@ img{
 
 
 h1{
-  font-size: 10vh;
+  font-size: 3vh;
   padding-top: 5%;
-  text-align: left;
+  text-align: center;
   padding-left: 5%;
+  padding-bottom: 5%;
   /*the code above determins the font for the headings on the page*/
 }
 
@@ -47,7 +48,7 @@ a{
 /*Header Styles*/
 header{
   padding-top: 40px;
-  padding-bottom: 500px;
+  padding-bottom: 434px;
   background-image: url('../images/rebeccatait-cover_pink.jpg');
   background-position: bottom center;
   background-size: contain;
@@ -93,7 +94,7 @@ header nav a span{
   z-index: 9999999999;
   padding: 8px;
 }
-/*this is where you can chand the color of the buttons*/
+/*this is where you can change the color of the buttons*/
 .burger-button span{
   width: 25px;
   border: 2px solid #596869;
